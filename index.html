@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f3faf7" />
+  <meta name="description" content="CLEAN BUDDY helps you care for your community with smarter waste habits." />
+  <title>CLEAN BUDDY — Together for cleaner tomorrow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="auth-view" id="auth-view">
+    <header class="auth-top"><a class="brand" href="#"><span class="brand-icon">♻</span><span>CLEAN <b>BUDDY</b></span></a><span class="slogan">Together for cleaner tomorrow</span><a class="help" href="mailto:hello@cleanbuddy.org">Need help?</a></header>
+    <main class="auth-layout">
+      <section class="hero"><span class="eyebrow">SMALL STEPS, BIG CHANGE</span><h1>A cleaner world<br>starts <em>with us.</em></h1><p>Build good habits, care for your neighborhood, and make every little action count.</p><div class="hero-art" aria-hidden="true"><span class="art-sun"></span><span class="art-hill"></span><span class="art-bin">♻</span><span class="art-leaf">✦</span></div><div class="hero-foot">🌱 &nbsp; Better habits, brighter future</div></section>
+      <section class="auth-card" aria-labelledby="auth-title">
+        <div class="auth-heading"><span class="eyebrow" id="form-kicker">WELCOME BACK</span><h2 id="auth-title">Let’s get you <em>in.</em></h2><p id="auth-subtitle">Sign in to keep your good work going.</p></div>
+        <form id="auth-form" novalidate>
+          <div class="field" id="name-field" hidden><label for="name">Your name</label><input id="name" autocomplete="name" placeholder="e.g. Aanya Sharma"></div>
+          <div class="field"><label for="email">Email address</label><input id="email" type="email" autocomplete="email" placeholder="you@example.com" required><small class="error" id="email-error"></small></div>
+          <div class="field"><div class="label-row"><label for="password">Password</label><button class="plain-button" type="button" id="generate-password">Generate one</button></div><div class="password-row"><input id="password" type="password" autocomplete="current-password" placeholder="At least 8 characters" required><button type="button" class="eye" id="toggle-password" aria-label="Show password">◉</button></div><small class="error" id="password-error"></small></div>
+          <div class="form-row" id="login-options"><label class="remember"><input type="checkbox" id="remember"> Remember me</label><button class="plain-button" type="button" id="forgot-password">Forgot password?</button></div>
+          <div class="field" id="otp-field" hidden><label for="otp-code">Email verification code</label><input id="otp-code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="Enter the 6-digit code"><small class="error" id="otp-error"></small><button class="plain-button" id="resend-otp" type="button">Resend code</button></div>
+          <div class="message" id="form-notice" role="status" aria-live="polite" hidden></div>
+          <button class="primary-button" id="submit-button" type="submit"><span id="submit-label">Log in with email</span><span>↗</span></button>
+        </form>
+        <div class="switch-auth" id="switch-auth">Don’t have an account? <button class="plain-button" type="button" id="register-toggle">Register</button></div>
+        <div class="fine-print">Your details stay private and secure.</div>
+      </section>
+    </main>
+    <footer class="auth-footer"><span>© 2026 CLEAN BUDDY</span><span>Small steps. Cleaner streets. ♥</span><span>Made for a greener tomorrow</span></footer>
+  </div>
+
+  <div class="awareness-view" id="awareness-view" hidden>
+    <header class="awareness-header">
+      <a class="brand" href="#awareness"><span class="brand-icon">♻</span><span>CLEAN <b>BUDDY</b></span></a>
+      <span class="awareness-header-label">A QUICK GUIDE TO WASTE</span>
+      <button class="skip-button" type="button" data-enter-dashboard>Skip to dashboard <span>→</span></button>
+    </header>
+    <main class="awareness-content" id="awareness">
+      <section class="awareness-hero">
+        <div class="awareness-hero-copy">
+          <span class="eyebrow">SMALL HABITS. BIG IMPACT.</span>
+          <h1>A cleaner community<br><em>starts with you.</em></h1>
+          <p>Sorting waste at the source makes recycling easier, reduces pollution, and helps keep our neighborhoods healthy.</p>
+          <div class="habit-chips" aria-label="Four simple habits"><span>↘ Reduce</span><span>↻ Reuse</span><span>♻ Recycle</span><span>✿ Compost</span></div>
+        </div>
+        <aside class="start-card">
+          <span class="start-card-icon" aria-hidden="true">🌱</span>
+          <span class="eyebrow">START HERE</span>
+          <h2>Sort it where it starts.</h2>
+          <p>Keep different kinds of waste separate at home, school, or work. A small step makes collection and recovery much easier.</p>
+        </aside>
+      </section>
+
+      <section class="awareness-section sorting-section" aria-labelledby="sorting-title">
+        <div class="awareness-section-heading"><div><span class="eyebrow">WASTE SEGREGATION</span><h2 id="sorting-title">Know what goes where</h2></div><p>Use the right bin and keep recyclable items clean and dry.</p></div>
+        <div class="sorting-grid">
+          <article class="sorting-card wet-card"><div class="bin-illustration" aria-hidden="true"><span>✿</span></div><div class="sorting-card-content"><span class="bin-label">GREEN BIN · WET</span><h3>Food & garden waste</h3><ul><li>Food scraps</li><li>Vegetable peels</li><li>Garden waste</li></ul></div><span class="bin-action">Compost when possible</span></article>
+          <article class="sorting-card dry-card"><div class="bin-illustration" aria-hidden="true"><span>♻</span></div><div class="sorting-card-content"><span class="bin-label">BLUE BIN · DRY</span><h3>Recyclables</h3><ul><li>Paper & cardboard</li><li>Plastic & metal</li><li>Glass</li></ul></div><span class="bin-action">Keep clean and dry</span></article>
+          <article class="sorting-card hazard-card"><div class="bin-illustration" aria-hidden="true"><span>!</span></div><div class="sorting-card-content"><span class="bin-label">RED / SPECIAL · HAZARDOUS</span><h3>Handle with care</h3><ul><li>Batteries & e-waste</li><li>Chemicals</li><li>Medical waste</li></ul></div><span class="bin-action">Use a special collection point</span></article>
+        </div>
+        <p class="local-guidance">Bin colors can vary by area. Check your local collection rules, especially for hazardous and medical waste.</p>
+      </section>
+
+      <section class="awareness-lower-grid">
+        <div class="why-card awareness-section" aria-labelledby="why-title">
+          <span class="eyebrow">WHY IT MATTERS</span><h2 id="why-title">A cleaner city means a healthier you.</h2>
+          <div class="benefit-grid">
+            <article class="benefit-item"><span aria-hidden="true">🍃</span><div><h3>Less pollution</h3><p>Helps keep our air, water, and soil clean.</p></div></article>
+            <article class="benefit-item"><span aria-hidden="true">♡</span><div><h3>Better health</h3><p>Reduces disease risks and helps keep communities safe.</p></div></article>
+            <article class="benefit-item"><span aria-hidden="true">♻</span><div><h3>Conserved resources</h3><p>More recycling means less waste sent to landfills.</p></div></article>
+            <article class="benefit-item"><span aria-hidden="true">⌂</span><div><h3>Stronger communities</h3><p>Cleaner, safer, more beautiful neighborhoods benefit everyone.</p></div></article>
+          </div>
+        </div>
+        <div class="tips-card awareness-section" aria-labelledby="tips-title">
+          <span class="eyebrow">SIMPLE WASTE MANAGEMENT TIPS</span><h2 id="tips-title">Four good habits to keep</h2>
+          <div class="tip-list">
+            <article class="tip-item"><span aria-hidden="true">🧴</span><div><h3>Reduce</h3><p>Avoid single-use plastics and choose reusable products.</p></div></article>
+            <article class="tip-item"><span aria-hidden="true">↻</span><div><h3>Reuse</h3><p>Give items a second life whenever possible.</p></div></article>
+            <article class="tip-item"><span aria-hidden="true">♻</span><div><h3>Recycle</h3><p>Separate materials and put them in the right bin.</p></div></article>
+            <article class="tip-item"><span aria-hidden="true">🌿</span><div><h3>Compost</h3><p>Turn suitable organic waste into nutrient-rich compost.</p></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="facts-card awareness-section" aria-labelledby="facts-title">
+        <div class="facts-heading"><span class="facts-icon" aria-hidden="true">✦</span><div><span class="eyebrow">DID YOU KNOW?</span><h2 id="facts-title">Small choices add up.</h2></div></div>
+        <ul class="facts-list"><li>Recycling one ton of paper can save about 17 trees.</li><li>Food waste in landfills produces methane, a harmful greenhouse gas.</li><li>Recycling plastic can use up to 80% less energy than making it new.</li><li>Separating waste can increase recycling rates by up to 50%.</li></ul>
+        <div class="facts-art" aria-hidden="true">🌍</div>
+      </section>
+
+      <footer class="awareness-footer"><p>Every small action counts. Sort it right and help keep your community clean.</p><button class="primary-button continue-button" type="button" data-enter-dashboard><span>Continue to your dashboard</span><span>↗</span></button></footer>
+    </main>
+  </div>
+
+  <div class="app-view" id="app-view" hidden>
+    <header class="app-header">
+      <a class="brand" href="#dashboard"><span class="brand-icon">♻</span><span>CLEAN <b>BUDDY</b></span></a>
+      <div class="header-slogan">Together for a cleaner tomorrow</div>
+      <div class="header-actions"><div class="points-pill" aria-label="Your points"><span>✦</span><strong id="points-total">120</strong><small>POINTS</small></div><button class="scan-button" id="scan-button" aria-label="Scan waste with the camera to find the right bin">▦ <span>AI Bin scanner</span></button><button class="settings-button" id="settings-button" aria-label="Settings" title="Settings">⚙</button><div class="avatar" id="user-avatar" aria-label="Your profile">A</div></div>
+    </header>
+    <main class="dashboard" id="dashboard">
+      <section class="welcome-row"><div><span class="eyebrow">YOUR COMMUNITY, YOUR IMPACT</span><h1>Welcome, <span id="user-name">friend</span> <span class="wave">✦</span></h1><p>One small action at a time makes a cleaner neighborhood.</p></div><div class="date-card"><span>YOUR IMPACT SO FAR</span><strong>🌿 <b id="impact-count">0</b> actions</strong><small>Every good deed adds up.</small></div></section>
+      <section class="action-section" aria-label="Dashboard actions">
+        <div class="section-heading"><div><span class="eyebrow">QUICK ACTIONS</span><h2>What would you like to do?</h2></div><span class="action-count" id="action-count">6 ways to help</span></div>
+        <div class="dashboard-grid">
+        <button class="action-card featured" data-section="report"><span class="card-icon">📍</span><span class="card-arrow">↗</span><strong>Report a waste issue</strong><small>Tell us about litter or overflowing bins nearby.</small><span class="card-link">Make a report →</span></button>
+        <button class="action-card" data-section="track"><span class="card-icon blue">⌖</span><span class="card-arrow">↗</span><strong>Track your report</strong><small>See the latest update on an issue you reported.</small><span class="card-link">View updates →</span></button>
+        <button class="action-card" data-section="pickup"><span class="card-icon mint">♻</span><span class="card-arrow">↗</span><strong>Report pickup request</strong><small>Schedule a collection for recyclable waste.</small><span class="card-link">Book a pickup →</span></button>
+        <button class="action-card" data-section="hotspots"><span class="card-icon yellow">✺</span><span class="card-arrow">↗</span><strong>Community hotspots</strong><small>See where your neighborhood needs a hand.</small><span class="card-link">Explore the map →</span></button>
+        <button class="action-card" data-section="feedback"><span class="card-icon pink">♡</span><span class="card-arrow">↗</span><strong>Share feedback</strong><small>Help us make CLEAN BUDDY even better.</small><span class="card-link">Tell us more →</span></button>
+        <button class="action-card" data-section="reminder"><span class="card-icon purple">◷</span><span class="card-arrow">↗</span><strong>Send a reminder</strong><small>A gentle nudge for your next good habit.</small><span class="card-link">Create reminder →</span></button>
+        <button class="action-card" id="admin-action" data-section="admin" hidden><span class="card-icon purple">▤</span><span class="card-arrow">↗</span><strong>Admin dashboard</strong><small>Review community reports, pickups, and feedback.</small><span class="card-link">Open admin view →</span></button>
+        </div>
+      </section>
+      <section class="bottom-banner"><span class="banner-icon">♻</span><div><strong>Every small action counts.</strong><p>Sort it right, keep it green, and inspire your community.</p></div><span class="banner-leaf">✦</span></section>
+    </main>
+    <nav class="mobile-nav" aria-label="Dashboard actions"><button class="active" data-section="home">⌂<span>Home</span></button><button data-section="report">＋<span>Report</span></button><button data-section="pickup">♻<span>Pickup</span></button><button id="mobile-settings">⚙<span>Settings</span></button></nav>
+  </div>
+
+  <dialog id="action-dialog"><form method="dialog" class="dialog-card"><button class="close-dialog" aria-label="Close">×</button><span class="eyebrow" id="dialog-kicker">CLEAN BUDDY</span><h2 id="dialog-title">Your neighborhood</h2><p id="dialog-copy"></p><div id="dialog-fields"></div><div class="dialog-message" id="dialog-message" hidden></div><button class="primary-button" id="dialog-submit" type="button">Continue <span>↗</span></button></form></dialog>
+  <script src="config.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
